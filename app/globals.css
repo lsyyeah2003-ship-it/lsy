@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #000000;
+  scroll-behavior: smooth;
+}
+
+* {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.08), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(56, 189, 248, 0.08), transparent 25%);
+  opacity: 0.45;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card {
+  position: relative;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 1.6rem;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.05));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+  animation: border-flow 2.4s linear infinite;
+}
+
+@keyframes border-flow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

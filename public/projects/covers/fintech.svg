@@ -1,0 +1,15 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#05070B"/>
+  <circle cx="980" cy="120" r="240" fill="url(#a)"/>
+  <rect x="140" y="120" width="920" height="460" rx="30" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.16"/>
+  <rect x="200" y="200" width="220" height="120" rx="16" fill="white" fill-opacity="0.08"/>
+  <rect x="450" y="200" width="500" height="24" rx="12" fill="white" fill-opacity="0.1"/>
+  <rect x="450" y="244" width="380" height="24" rx="12" fill="white" fill-opacity="0.08"/>
+  <rect x="200" y="350" width="750" height="170" rx="18" fill="white" fill-opacity="0.07"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 120) rotate(90) scale(240)">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
