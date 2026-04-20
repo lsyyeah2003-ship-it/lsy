@@ -1,5 +1,9 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // 告诉 Next.js 生成静态网页文件
+  images: {
+    unoptimized: true, // 静态导出模式下必须关闭图片优化
+  },
+};
+
+export default nextConfig;
