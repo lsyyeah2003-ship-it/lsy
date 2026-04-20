@@ -1,9 +1,0 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',      // 必须有这一行
-  images: {
-    unoptimized: true,   // 静态模式必须加上这个，否则图片会报错
-  },
-};
-
-export default nextConfig;
