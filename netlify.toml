@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // 告诉 Next.js 生成静态网页文件
+  output: 'export',      // 必须有这一行
   images: {
-    unoptimized: true, // 静态导出模式下必须关闭图片优化
+    unoptimized: true,   // 静态模式必须加上这个，否则图片会报错
   },
 };
 
